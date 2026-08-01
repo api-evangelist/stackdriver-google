@@ -1,8 +1,30 @@
 aid: stackdriver-google
 name: Stackdriver (Google)
-description: 'Stackdriver (Google) is a company surfaced as a portfolio company of bain-capital-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: ai-infrastructure. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  Stackdriver is the former name of the Google Cloud Operations suite, Google's
+  integrated observability platform for applications and infrastructure running on
+  Google Cloud, hybrid, and multi-cloud environments. Rebranded to Google Cloud
+  Operations in 2020, the suite bundles Cloud Monitoring (metrics, dashboards,
+  uptime checks, and alerting), Cloud Logging (centralized log storage, search,
+  and analysis), Cloud Trace (distributed tracing), Error Reporting (automatic
+  error aggregation), and Cloud Profiler (continuous CPU and memory profiling).
+  Each capability is exposed as a REST API (Cloud Monitoring API v3, Cloud Logging
+  API v2, Cloud Trace API v2, Error Reporting API, Cloud Profiler API) with first-party
+  client libraries across Python, Node.js, Go, Java, Ruby, PHP, and .NET, and is
+  governed by Google Cloud's authentication, IAM, deprecation, and status-page
+  practices.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png
 url: https://raw.githubusercontent.com/api-evangelist/stackdriver-google/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +32,104 @@ x-backed-by:
 - bain-capital-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai Infrastructure
-apis: []
+- Observability
+- Monitoring
+- Logging
+- Tracing
+- Cloud Operations
+- Google Cloud
+- APIs
+apis:
+- name: Cloud Monitoring API
+  description: >-
+    Cloud Monitoring API (v3) collects metrics, events, and metadata from Google
+    Cloud, AWS, and application instrumentation, and exposes them for dashboards,
+    uptime checks, alerting policies, and time-series queries.
+  humanURL: https://cloud.google.com/monitoring/api/v3
+  baseURL: https://monitoring.googleapis.com
+  properties:
+  - type: Documentation
+    url: https://cloud.google.com/monitoring/docs
+  - type: APIReference
+    url: https://cloud.google.com/monitoring/api/ref_v3/rest
+- name: Cloud Logging API
+  description: >-
+    Cloud Logging API (v2) writes, stores, searches, and manages log entries and
+    log-based metrics across Google Cloud and multi-cloud resources.
+  humanURL: https://cloud.google.com/logging/docs/reference/v2/rest
+  baseURL: https://logging.googleapis.com
+  properties:
+  - type: Documentation
+    url: https://cloud.google.com/logging/docs
+  - type: APIReference
+    url: https://cloud.google.com/logging/docs/reference/v2/rest
+- name: Cloud Trace API
+  description: >-
+    Cloud Trace API (v2) ingests and retrieves distributed-trace spans to analyze
+    request latency across microservices.
+  humanURL: https://cloud.google.com/trace/docs/reference
+  baseURL: https://cloudtrace.googleapis.com
+  properties:
+  - type: Documentation
+    url: https://cloud.google.com/trace/docs
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/stackdriver-google-vulnerability-disclosure.yml
+- type: Security
+  url: https://g.co/vrp
+- type: DomainSecurity
+  url: security/stackdriver-google-domain-security.yml
+- type: SecurityTxt
+  url: well-known/stackdriver-google-security.txt
+- type: WellKnown
+  url: well-known/stackdriver-google-well-known.yml
+- type: Packages
+  url: packages/stackdriver-google-packages.yml
+- type: SDKs
+  url: packages/stackdriver-google-packages.yml
+- type: Lifecycle
+  url: lifecycle/stackdriver-google-lifecycle.yml
+- type: Deprecation
+  url: https://cloud.google.com/terms/deprecation
 - type: Website
   url: https://cloud.google.com/products/operations
+- type: DeveloperPortal
+  url: https://cloud.google.com/stackdriver/docs
+- type: Documentation
+  url: https://cloud.google.com/stackdriver/docs
+- type: APIReference
+  url: https://cloud.google.com/monitoring/api/ref_v3/rest
+- type: GettingStarted
+  url: https://cloud.google.com/monitoring/docs/monitoring-overview
+- type: Pricing
+  url: https://cloud.google.com/stackdriver/pricing
+- type: StatusPage
+  url: https://status.cloud.google.com/
+- type: Blog
+  url: https://cloud.google.com/blog/products/management-tools
+- type: GitHubOrganization
+  url: https://github.com/googleapis
+- type: Support
+  url: https://cloud.google.com/support
+- type: SignUp
+  url: https://console.cloud.google.com/
+- type: TermsOfService
+  url: https://cloud.google.com/terms
+- type: PrivacyPolicy
+  url: https://policies.google.com/privacy

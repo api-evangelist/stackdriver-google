@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  Google Cloud status page, deprecation policy, and API versioning docs.
+versioning:
+  scheme: uri-path
+  current: v3
+  notes: >-
+    Cloud Monitoring API is v3, Cloud Logging API is v2, Cloud Trace API is v2 —
+    version is carried in the request path.
+  docs: https://cloud.google.com/apis/design/versioning
+deprecation:
+  policy_url: https://cloud.google.com/terms/deprecation
+  notes: >-
+    Google Cloud commits to a deprecation policy for Generally Available services
+    under its Terms of Service; deprecated services are listed at
+    https://cloud.google.com/terms/deprecation.
+status_page: https://status.cloud.google.com/
+sla:
+  monitoring_url: https://cloud.google.com/monitoring/sla
+  logging_url: https://cloud.google.com/logging/sla

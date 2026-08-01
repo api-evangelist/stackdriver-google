@@ -1,0 +1,63 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  Google Cloud client libraries (github.com/googleapis) verified on PyPI and npm;
+  remaining languages are the first-party googleapis client libraries for the
+  Cloud Monitoring / Logging APIs.
+packages:
+- language: python
+  registry: pypi
+  name: google-cloud-monitoring
+  url: https://pypi.org/project/google-cloud-monitoring/
+  install: pip install google-cloud-monitoring
+  official: true
+  verified: true
+- language: python
+  registry: pypi
+  name: google-cloud-logging
+  url: https://pypi.org/project/google-cloud-logging/
+  install: pip install google-cloud-logging
+  official: true
+- language: javascript
+  registry: npm
+  name: "@google-cloud/monitoring"
+  url: https://www.npmjs.com/package/@google-cloud/monitoring
+  install: npm install @google-cloud/monitoring
+  official: true
+  verified: true
+- language: javascript
+  registry: npm
+  name: "@google-cloud/logging"
+  url: https://www.npmjs.com/package/@google-cloud/logging
+  install: npm install @google-cloud/logging
+  official: true
+- language: go
+  registry: pkg.go.dev
+  name: cloud.google.com/go/monitoring
+  url: https://pkg.go.dev/cloud.google.com/go/monitoring
+  install: go get cloud.google.com/go/monitoring
+  official: true
+- language: java
+  registry: maven
+  name: com.google.cloud:google-cloud-monitoring
+  url: https://central.sonatype.com/artifact/com.google.cloud/google-cloud-monitoring
+  install: implementation 'com.google.cloud:google-cloud-monitoring'
+  official: true
+- language: ruby
+  registry: rubygems
+  name: google-cloud-monitoring
+  url: https://rubygems.org/gems/google-cloud-monitoring
+  install: gem install google-cloud-monitoring
+  official: true
+- language: php
+  registry: packagist
+  name: google/cloud-monitoring
+  url: https://packagist.org/packages/google/cloud-monitoring
+  install: composer require google/cloud-monitoring
+  official: true
+- language: dotnet
+  registry: nuget
+  name: Google.Cloud.Monitoring.V3
+  url: https://www.nuget.org/packages/Google.Cloud.Monitoring.V3
+  install: dotnet add package Google.Cloud.Monitoring.V3
+  official: true

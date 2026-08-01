@@ -1,0 +1,13 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of /.well-known/ on Google hosts
+host: https://www.google.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: stackdriver-google-security.txt
+notes: >-
+  Cloud Monitoring/Logging API hosts (monitoring.googleapis.com,
+  logging.googleapis.com) are Google API endpoints and do not serve the standard
+  /.well-known/ discovery surface; OAuth/OIDC discovery for Google APIs is served
+  from https://accounts.google.com/.well-known/openid-configuration.
